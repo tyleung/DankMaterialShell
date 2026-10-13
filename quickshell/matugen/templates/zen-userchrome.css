@@ -12,6 +12,14 @@
   --zen-main-browser-background-toolbar: {{colors.background.default.hex}} !important;
 }
 
+/* Zen maps popup backgrounds to --arrowpanel-background, but the popup text
+   color comes from --panel-text-color (defaults to the system MenuText). Set it
+   here so dropdown/menu values stay legible on the themed popup background. */
+menupopup,
+panel {
+  --panel-text-color: {{colors.on_background.default.hex}} !important;
+}
+
 #zen-browser-background {
   --zen-main-browser-background: {{colors.background.default.hex}} !important;
   --zen-background-opacity: 1 !important;
